@@ -13,7 +13,7 @@ class LOTLogin(View):
 
     def get(self, request, *args, **kwargs):
         uuid = kwargs['uuid']
-        hook_url = request.GET.get('hook_url')
+        hook_url = request.GET.get('HOOK_URL')
         if hook_url:
             request.session['hook_url'] = hook_url
 
